@@ -208,14 +208,12 @@ public class ITNotebookServiceClientTest {
 
   @Test
   public void testSetInstanceAccelarator() throws ExecutionException, InterruptedException {
-    Instance.AcceleratorType type = Instance.AcceleratorType.NVIDIA_TESLA_P4;
-    long coreCount = 1L;
     this.stopInstance();
     SetInstanceAcceleratorRequest request =
         SetInstanceAcceleratorRequest.newBuilder()
             .setName(INSTANCE_NAME)
-            .setType(type)
-            .setCoreCount(coreCount)
+            .setType(Instance.AcceleratorType.NVIDIA_TESLA_P4)
+            .setCoreCount(1L)
             .build();
     Instance response = client.setInstanceAcceleratorAsync(request).get();
     this.startInstance();
