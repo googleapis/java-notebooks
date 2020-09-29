@@ -50,7 +50,6 @@ public class ITNotebookServiceClientTest {
 
   private static final String PROJECT_ID = ServiceOptions.getDefaultProjectId();
   private static final String LOCATION = "us-central1-a";
-  private static final String LOCATION_B = "us-central1-b";
   private static final String PARENT = "projects/" + PROJECT_ID + "/locations/" + LOCATION;
   private static NotebookServiceClient client;
   private static final String ID = UUID.randomUUID().toString().substring(0, 8);
@@ -139,7 +138,7 @@ public class ITNotebookServiceClientTest {
   public void testListInstances() {
     ListInstancesRequest request = ListInstancesRequest.newBuilder().setParent(PARENT).build();
     for (Instance element : client.listInstances(request).iterateAll()) {
-      if (element.getName().startsWith("test-notebook-instance-id-")) {
+      if (element.getName().equals(NOTEBOOK_INSTANCE_ID)) {
         assertEquals(expectedNotebookInstance.getContainerImage(), element.getContainerImage());
         assertEquals(expectedNotebookInstance.getName(), element.getName());
         assertEquals(expectedNotebookInstance.getMachineType(), element.getMachineType());
@@ -165,7 +164,7 @@ public class ITNotebookServiceClientTest {
     ListEnvironmentsRequest request =
         ListEnvironmentsRequest.newBuilder().setParent(PARENT).build();
     for (Environment element : client.listEnvironments(request).iterateAll()) {
-      if (element.getName().startsWith("test-environment-id-")) {
+      if (element.getName().equals(ENVIRONMENT_ID)) {
         assertEquals(expectedEnvironmentResponse.getName(), element.getName());
         assertEquals(expectedEnvironmentResponse.getContainerImage(), element.getContainerImage());
       }
@@ -189,7 +188,7 @@ public class ITNotebookServiceClientTest {
             .setMachineType(MACHINE_TYPE_B)
             .build();
     Instance response = client.setInstanceMachineTypeAsync(request).get();
-    assertTrue(response.getMachineType().endsWith("n1-standard-2"));
+    assertTrue(response.getMachineType().endsWith(MACHINE_TYPE_B));
     this.startInstance();
   }
 
@@ -229,6 +228,6 @@ public class ITNotebookServiceClientTest {
   public void testResetInstance() throws ExecutionException, InterruptedException {
     ResetInstanceRequest request = ResetInstanceRequest.newBuilder().setName(INSTANCE_NAME).build();
     Instance response = client.resetInstanceAsync(request).get();
-    assertTrue(response.getMachineType().contains("n1-standard-2"));
+    assertTrue(response.getMachineType().endsWith(MACHINE_TYPE_B));
   }
 }
