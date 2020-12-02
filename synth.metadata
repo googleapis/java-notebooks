@@ -11,8 +11,8 @@
       "git": {
         "name": "googleapis",
         "remote": "https://github.com/googleapis/googleapis.git",
-        "sha": "b11a87f3b54be3a5e42c15020ee1e0781f86da90",
-        "internalRef": "344134135"
+        "sha": "88ad4d34ce272c1af42611ae6dd4477e996213e0",
+        "internalRef": "344838119"
       }
     },
     {
@@ -125,7 +125,6 @@
     "proto-google-cloud-notebooks-v1beta1/src/main/java/com/google/cloud/notebooks/v1beta1/DeleteInstanceRequest.java",
     "proto-google-cloud-notebooks-v1beta1/src/main/java/com/google/cloud/notebooks/v1beta1/DeleteInstanceRequestOrBuilder.java",
     "proto-google-cloud-notebooks-v1beta1/src/main/java/com/google/cloud/notebooks/v1beta1/Environment.java",
-    "proto-google-cloud-notebooks-v1beta1/src/main/java/com/google/cloud/notebooks/v1beta1/EnvironmentName.java",
     "proto-google-cloud-notebooks-v1beta1/src/main/java/com/google/cloud/notebooks/v1beta1/EnvironmentOrBuilder.java",
     "proto-google-cloud-notebooks-v1beta1/src/main/java/com/google/cloud/notebooks/v1beta1/EnvironmentProto.java",
     "proto-google-cloud-notebooks-v1beta1/src/main/java/com/google/cloud/notebooks/v1beta1/GetEnvironmentRequest.java",
@@ -133,7 +132,6 @@
     "proto-google-cloud-notebooks-v1beta1/src/main/java/com/google/cloud/notebooks/v1beta1/GetInstanceRequest.java",
     "proto-google-cloud-notebooks-v1beta1/src/main/java/com/google/cloud/notebooks/v1beta1/GetInstanceRequestOrBuilder.java",
     "proto-google-cloud-notebooks-v1beta1/src/main/java/com/google/cloud/notebooks/v1beta1/Instance.java",
-    "proto-google-cloud-notebooks-v1beta1/src/main/java/com/google/cloud/notebooks/v1beta1/InstanceName.java",
     "proto-google-cloud-notebooks-v1beta1/src/main/java/com/google/cloud/notebooks/v1beta1/InstanceOrBuilder.java",
     "proto-google-cloud-notebooks-v1beta1/src/main/java/com/google/cloud/notebooks/v1beta1/InstanceProto.java",
     "proto-google-cloud-notebooks-v1beta1/src/main/java/com/google/cloud/notebooks/v1beta1/IsInstanceUpgradeableRequest.java",
