@@ -78,7 +78,6 @@ import com.google.longrunning.Operation;
 import com.google.protobuf.Empty;
 import java.io.IOException;
 import java.util.List;
-import java.util.Objects;
 import javax.annotation.Generated;
 import org.threeten.bp.Duration;
 
@@ -207,7 +206,7 @@ public class NotebookServiceStubSettings extends StubSettings<NotebookServiceStu
 
             @Override
             public Iterable<Instance> extractResources(ListInstancesResponse payload) {
-              return Objects.isNull(payload.getInstancesList())
+              return payload.getInstancesList() == null
                   ? ImmutableList.<Instance>of()
                   : payload.getInstancesList();
             }
@@ -247,7 +246,7 @@ public class NotebookServiceStubSettings extends StubSettings<NotebookServiceStu
 
             @Override
             public Iterable<Environment> extractResources(ListEnvironmentsResponse payload) {
-              return Objects.isNull(payload.getEnvironmentsList())
+              return payload.getEnvironmentsList() == null
                   ? ImmutableList.<Environment>of()
                   : payload.getEnvironmentsList();
             }
