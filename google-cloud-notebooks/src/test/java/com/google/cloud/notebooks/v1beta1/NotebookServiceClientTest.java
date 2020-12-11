@@ -101,7 +101,7 @@ public class NotebookServiceClientTest {
         ListInstancesRequest.newBuilder()
             .setParent("parent-995424086")
             .setPageSize(883849137)
-            .setPageToken("page_token1630607433")
+            .setPageToken("pageToken873572522")
             .build();
 
     ListInstancesPagedResponse pagedListResponse = client.listInstances(request);
@@ -134,7 +134,7 @@ public class NotebookServiceClientTest {
           ListInstancesRequest.newBuilder()
               .setParent("parent-995424086")
               .setPageSize(883849137)
-              .setPageToken("page_token1630607433")
+              .setPageToken("pageToken873572522")
               .build();
       client.listInstances(request);
       Assert.fail("No exception raised");
@@ -148,17 +148,17 @@ public class NotebookServiceClientTest {
     Instance expectedResponse =
         Instance.newBuilder()
             .setName("name3373707")
-            .setPostStartupScript("post_startup_script355382860")
-            .setProxyUri("proxy_uri-475670501")
+            .setPostStartupScript("postStartupScript870779112")
+            .setProxyUri("proxyUri-985185250")
             .addAllInstanceOwners(new ArrayList<String>())
-            .setServiceAccount("service_account-1948028253")
-            .setMachineType("machine_type1838323762")
+            .setServiceAccount("serviceAccount1079137720")
+            .setMachineType("machineType-218117087")
             .setInstallGpuDriver(true)
-            .setCustomGpuDriverPath("custom_gpu_driver_path1863223803")
+            .setCustomGpuDriverPath("customGpuDriverPath509224520")
             .setBootDiskSizeGb(1398920548)
             .setDataDiskSizeGb(-1668379732)
             .setNoRemoveDataDisk(true)
-            .setKmsKey("kms_key-591635343")
+            .setKmsKey("kmsKey-1127483058")
             .setNoPublicIp(true)
             .setNoProxyAccess(true)
             .setNetwork("network1843485230")
@@ -205,17 +205,17 @@ public class NotebookServiceClientTest {
     Instance expectedResponse =
         Instance.newBuilder()
             .setName("name3373707")
-            .setPostStartupScript("post_startup_script355382860")
-            .setProxyUri("proxy_uri-475670501")
+            .setPostStartupScript("postStartupScript870779112")
+            .setProxyUri("proxyUri-985185250")
             .addAllInstanceOwners(new ArrayList<String>())
-            .setServiceAccount("service_account-1948028253")
-            .setMachineType("machine_type1838323762")
+            .setServiceAccount("serviceAccount1079137720")
+            .setMachineType("machineType-218117087")
             .setInstallGpuDriver(true)
-            .setCustomGpuDriverPath("custom_gpu_driver_path1863223803")
+            .setCustomGpuDriverPath("customGpuDriverPath509224520")
             .setBootDiskSizeGb(1398920548)
             .setDataDiskSizeGb(-1668379732)
             .setNoRemoveDataDisk(true)
-            .setKmsKey("kms_key-591635343")
+            .setKmsKey("kmsKey-1127483058")
             .setNoPublicIp(true)
             .setNoProxyAccess(true)
             .setNetwork("network1843485230")
@@ -236,7 +236,7 @@ public class NotebookServiceClientTest {
     CreateInstanceRequest request =
         CreateInstanceRequest.newBuilder()
             .setParent("parent-995424086")
-            .setInstanceId("instance_id-2101995259")
+            .setInstanceId("instanceId902024336")
             .setInstance(Instance.newBuilder().build())
             .build();
 
@@ -265,7 +265,7 @@ public class NotebookServiceClientTest {
       CreateInstanceRequest request =
           CreateInstanceRequest.newBuilder()
               .setParent("parent-995424086")
-              .setInstanceId("instance_id-2101995259")
+              .setInstanceId("instanceId902024336")
               .setInstance(Instance.newBuilder().build())
               .build();
       client.createInstanceAsync(request).get();
@@ -282,17 +282,17 @@ public class NotebookServiceClientTest {
     Instance expectedResponse =
         Instance.newBuilder()
             .setName("name3373707")
-            .setPostStartupScript("post_startup_script355382860")
-            .setProxyUri("proxy_uri-475670501")
+            .setPostStartupScript("postStartupScript870779112")
+            .setProxyUri("proxyUri-985185250")
             .addAllInstanceOwners(new ArrayList<String>())
-            .setServiceAccount("service_account-1948028253")
-            .setMachineType("machine_type1838323762")
+            .setServiceAccount("serviceAccount1079137720")
+            .setMachineType("machineType-218117087")
             .setInstallGpuDriver(true)
-            .setCustomGpuDriverPath("custom_gpu_driver_path1863223803")
+            .setCustomGpuDriverPath("customGpuDriverPath509224520")
             .setBootDiskSizeGb(1398920548)
             .setDataDiskSizeGb(-1668379732)
             .setNoRemoveDataDisk(true)
-            .setKmsKey("kms_key-591635343")
+            .setKmsKey("kmsKey-1127483058")
             .setNoPublicIp(true)
             .setNoProxyAccess(true)
             .setNetwork("network1843485230")
@@ -313,7 +313,7 @@ public class NotebookServiceClientTest {
     RegisterInstanceRequest request =
         RegisterInstanceRequest.newBuilder()
             .setParent("parent-995424086")
-            .setInstanceId("instance_id-2101995259")
+            .setInstanceId("instanceId902024336")
             .build();
 
     Instance actualResponse = client.registerInstanceAsync(request).get();
@@ -340,7 +340,7 @@ public class NotebookServiceClientTest {
       RegisterInstanceRequest request =
           RegisterInstanceRequest.newBuilder()
               .setParent("parent-995424086")
-              .setInstanceId("instance_id-2101995259")
+              .setInstanceId("instanceId902024336")
               .build();
       client.registerInstanceAsync(request).get();
       Assert.fail("No exception raised");
@@ -356,17 +356,17 @@ public class NotebookServiceClientTest {
     Instance expectedResponse =
         Instance.newBuilder()
             .setName("name3373707")
-            .setPostStartupScript("post_startup_script355382860")
-            .setProxyUri("proxy_uri-475670501")
+            .setPostStartupScript("postStartupScript870779112")
+            .setProxyUri("proxyUri-985185250")
             .addAllInstanceOwners(new ArrayList<String>())
-            .setServiceAccount("service_account-1948028253")
-            .setMachineType("machine_type1838323762")
+            .setServiceAccount("serviceAccount1079137720")
+            .setMachineType("machineType-218117087")
             .setInstallGpuDriver(true)
-            .setCustomGpuDriverPath("custom_gpu_driver_path1863223803")
+            .setCustomGpuDriverPath("customGpuDriverPath509224520")
             .setBootDiskSizeGb(1398920548)
             .setDataDiskSizeGb(-1668379732)
             .setNoRemoveDataDisk(true)
-            .setKmsKey("kms_key-591635343")
+            .setKmsKey("kmsKey-1127483058")
             .setNoPublicIp(true)
             .setNoProxyAccess(true)
             .setNetwork("network1843485230")
@@ -432,17 +432,17 @@ public class NotebookServiceClientTest {
     Instance expectedResponse =
         Instance.newBuilder()
             .setName("name3373707")
-            .setPostStartupScript("post_startup_script355382860")
-            .setProxyUri("proxy_uri-475670501")
+            .setPostStartupScript("postStartupScript870779112")
+            .setProxyUri("proxyUri-985185250")
             .addAllInstanceOwners(new ArrayList<String>())
-            .setServiceAccount("service_account-1948028253")
-            .setMachineType("machine_type1838323762")
+            .setServiceAccount("serviceAccount1079137720")
+            .setMachineType("machineType-218117087")
             .setInstallGpuDriver(true)
-            .setCustomGpuDriverPath("custom_gpu_driver_path1863223803")
+            .setCustomGpuDriverPath("customGpuDriverPath509224520")
             .setBootDiskSizeGb(1398920548)
             .setDataDiskSizeGb(-1668379732)
             .setNoRemoveDataDisk(true)
-            .setKmsKey("kms_key-591635343")
+            .setKmsKey("kmsKey-1127483058")
             .setNoPublicIp(true)
             .setNoProxyAccess(true)
             .setNetwork("network1843485230")
@@ -463,7 +463,7 @@ public class NotebookServiceClientTest {
     SetInstanceMachineTypeRequest request =
         SetInstanceMachineTypeRequest.newBuilder()
             .setName("name3373707")
-            .setMachineType("machine_type1838323762")
+            .setMachineType("machineType-218117087")
             .build();
 
     Instance actualResponse = client.setInstanceMachineTypeAsync(request).get();
@@ -491,7 +491,7 @@ public class NotebookServiceClientTest {
       SetInstanceMachineTypeRequest request =
           SetInstanceMachineTypeRequest.newBuilder()
               .setName("name3373707")
-              .setMachineType("machine_type1838323762")
+              .setMachineType("machineType-218117087")
               .build();
       client.setInstanceMachineTypeAsync(request).get();
       Assert.fail("No exception raised");
@@ -507,17 +507,17 @@ public class NotebookServiceClientTest {
     Instance expectedResponse =
         Instance.newBuilder()
             .setName("name3373707")
-            .setPostStartupScript("post_startup_script355382860")
-            .setProxyUri("proxy_uri-475670501")
+            .setPostStartupScript("postStartupScript870779112")
+            .setProxyUri("proxyUri-985185250")
             .addAllInstanceOwners(new ArrayList<String>())
-            .setServiceAccount("service_account-1948028253")
-            .setMachineType("machine_type1838323762")
+            .setServiceAccount("serviceAccount1079137720")
+            .setMachineType("machineType-218117087")
             .setInstallGpuDriver(true)
-            .setCustomGpuDriverPath("custom_gpu_driver_path1863223803")
+            .setCustomGpuDriverPath("customGpuDriverPath509224520")
             .setBootDiskSizeGb(1398920548)
             .setDataDiskSizeGb(-1668379732)
             .setNoRemoveDataDisk(true)
-            .setKmsKey("kms_key-591635343")
+            .setKmsKey("kmsKey-1127483058")
             .setNoPublicIp(true)
             .setNoProxyAccess(true)
             .setNetwork("network1843485230")
@@ -625,17 +625,17 @@ public class NotebookServiceClientTest {
     Instance expectedResponse =
         Instance.newBuilder()
             .setName("name3373707")
-            .setPostStartupScript("post_startup_script355382860")
-            .setProxyUri("proxy_uri-475670501")
+            .setPostStartupScript("postStartupScript870779112")
+            .setProxyUri("proxyUri-985185250")
             .addAllInstanceOwners(new ArrayList<String>())
-            .setServiceAccount("service_account-1948028253")
-            .setMachineType("machine_type1838323762")
+            .setServiceAccount("serviceAccount1079137720")
+            .setMachineType("machineType-218117087")
             .setInstallGpuDriver(true)
-            .setCustomGpuDriverPath("custom_gpu_driver_path1863223803")
+            .setCustomGpuDriverPath("customGpuDriverPath509224520")
             .setBootDiskSizeGb(1398920548)
             .setDataDiskSizeGb(-1668379732)
             .setNoRemoveDataDisk(true)
-            .setKmsKey("kms_key-591635343")
+            .setKmsKey("kmsKey-1127483058")
             .setNoPublicIp(true)
             .setNoProxyAccess(true)
             .setNetwork("network1843485230")
@@ -691,17 +691,17 @@ public class NotebookServiceClientTest {
     Instance expectedResponse =
         Instance.newBuilder()
             .setName("name3373707")
-            .setPostStartupScript("post_startup_script355382860")
-            .setProxyUri("proxy_uri-475670501")
+            .setPostStartupScript("postStartupScript870779112")
+            .setProxyUri("proxyUri-985185250")
             .addAllInstanceOwners(new ArrayList<String>())
-            .setServiceAccount("service_account-1948028253")
-            .setMachineType("machine_type1838323762")
+            .setServiceAccount("serviceAccount1079137720")
+            .setMachineType("machineType-218117087")
             .setInstallGpuDriver(true)
-            .setCustomGpuDriverPath("custom_gpu_driver_path1863223803")
+            .setCustomGpuDriverPath("customGpuDriverPath509224520")
             .setBootDiskSizeGb(1398920548)
             .setDataDiskSizeGb(-1668379732)
             .setNoRemoveDataDisk(true)
-            .setKmsKey("kms_key-591635343")
+            .setKmsKey("kmsKey-1127483058")
             .setNoPublicIp(true)
             .setNoProxyAccess(true)
             .setNetwork("network1843485230")
@@ -756,17 +756,17 @@ public class NotebookServiceClientTest {
     Instance expectedResponse =
         Instance.newBuilder()
             .setName("name3373707")
-            .setPostStartupScript("post_startup_script355382860")
-            .setProxyUri("proxy_uri-475670501")
+            .setPostStartupScript("postStartupScript870779112")
+            .setProxyUri("proxyUri-985185250")
             .addAllInstanceOwners(new ArrayList<String>())
-            .setServiceAccount("service_account-1948028253")
-            .setMachineType("machine_type1838323762")
+            .setServiceAccount("serviceAccount1079137720")
+            .setMachineType("machineType-218117087")
             .setInstallGpuDriver(true)
-            .setCustomGpuDriverPath("custom_gpu_driver_path1863223803")
+            .setCustomGpuDriverPath("customGpuDriverPath509224520")
             .setBootDiskSizeGb(1398920548)
             .setDataDiskSizeGb(-1668379732)
             .setNoRemoveDataDisk(true)
-            .setKmsKey("kms_key-591635343")
+            .setKmsKey("kmsKey-1127483058")
             .setNoPublicIp(true)
             .setNoProxyAccess(true)
             .setNetwork("network1843485230")
@@ -822,17 +822,17 @@ public class NotebookServiceClientTest {
     Instance expectedResponse =
         Instance.newBuilder()
             .setName("name3373707")
-            .setPostStartupScript("post_startup_script355382860")
-            .setProxyUri("proxy_uri-475670501")
+            .setPostStartupScript("postStartupScript870779112")
+            .setProxyUri("proxyUri-985185250")
             .addAllInstanceOwners(new ArrayList<String>())
-            .setServiceAccount("service_account-1948028253")
-            .setMachineType("machine_type1838323762")
+            .setServiceAccount("serviceAccount1079137720")
+            .setMachineType("machineType-218117087")
             .setInstallGpuDriver(true)
-            .setCustomGpuDriverPath("custom_gpu_driver_path1863223803")
+            .setCustomGpuDriverPath("customGpuDriverPath509224520")
             .setBootDiskSizeGb(1398920548)
             .setDataDiskSizeGb(-1668379732)
             .setNoRemoveDataDisk(true)
-            .setKmsKey("kms_key-591635343")
+            .setKmsKey("kmsKey-1127483058")
             .setNoPublicIp(true)
             .setNoProxyAccess(true)
             .setNetwork("network1843485230")
@@ -853,7 +853,7 @@ public class NotebookServiceClientTest {
     ReportInstanceInfoRequest request =
         ReportInstanceInfoRequest.newBuilder()
             .setName("name3373707")
-            .setVmId("vm_id112317347")
+            .setVmId("vmId3622450")
             .putAllMetadata(new HashMap<String, String>())
             .build();
 
@@ -882,7 +882,7 @@ public class NotebookServiceClientTest {
       ReportInstanceInfoRequest request =
           ReportInstanceInfoRequest.newBuilder()
               .setName("name3373707")
-              .setVmId("vm_id112317347")
+              .setVmId("vmId3622450")
               .putAllMetadata(new HashMap<String, String>())
               .build();
       client.reportInstanceInfoAsync(request).get();
@@ -899,14 +899,14 @@ public class NotebookServiceClientTest {
     IsInstanceUpgradeableResponse expectedResponse =
         IsInstanceUpgradeableResponse.newBuilder()
             .setUpgradeable(true)
-            .setUpgradeVersion("upgrade_version1040155061")
-            .setUpgradeInfo("upgrade_info-1337232143")
+            .setUpgradeVersion("upgradeVersion-392903908")
+            .setUpgradeInfo("upgradeInfo-1844902678")
             .build();
     mockNotebookService.addResponse(expectedResponse);
 
     IsInstanceUpgradeableRequest request =
         IsInstanceUpgradeableRequest.newBuilder()
-            .setNotebookInstance("notebook_instance-1078982023")
+            .setNotebookInstance("notebookInstance-544239728")
             .build();
 
     IsInstanceUpgradeableResponse actualResponse = client.isInstanceUpgradeable(request);
@@ -932,7 +932,7 @@ public class NotebookServiceClientTest {
     try {
       IsInstanceUpgradeableRequest request =
           IsInstanceUpgradeableRequest.newBuilder()
-              .setNotebookInstance("notebook_instance-1078982023")
+              .setNotebookInstance("notebookInstance-544239728")
               .build();
       client.isInstanceUpgradeable(request);
       Assert.fail("No exception raised");
@@ -946,17 +946,17 @@ public class NotebookServiceClientTest {
     Instance expectedResponse =
         Instance.newBuilder()
             .setName("name3373707")
-            .setPostStartupScript("post_startup_script355382860")
-            .setProxyUri("proxy_uri-475670501")
+            .setPostStartupScript("postStartupScript870779112")
+            .setProxyUri("proxyUri-985185250")
             .addAllInstanceOwners(new ArrayList<String>())
-            .setServiceAccount("service_account-1948028253")
-            .setMachineType("machine_type1838323762")
+            .setServiceAccount("serviceAccount1079137720")
+            .setMachineType("machineType-218117087")
             .setInstallGpuDriver(true)
-            .setCustomGpuDriverPath("custom_gpu_driver_path1863223803")
+            .setCustomGpuDriverPath("customGpuDriverPath509224520")
             .setBootDiskSizeGb(1398920548)
             .setDataDiskSizeGb(-1668379732)
             .setNoRemoveDataDisk(true)
-            .setKmsKey("kms_key-591635343")
+            .setKmsKey("kmsKey-1127483058")
             .setNoPublicIp(true)
             .setNoProxyAccess(true)
             .setNetwork("network1843485230")
@@ -1013,17 +1013,17 @@ public class NotebookServiceClientTest {
     Instance expectedResponse =
         Instance.newBuilder()
             .setName("name3373707")
-            .setPostStartupScript("post_startup_script355382860")
-            .setProxyUri("proxy_uri-475670501")
+            .setPostStartupScript("postStartupScript870779112")
+            .setProxyUri("proxyUri-985185250")
             .addAllInstanceOwners(new ArrayList<String>())
-            .setServiceAccount("service_account-1948028253")
-            .setMachineType("machine_type1838323762")
+            .setServiceAccount("serviceAccount1079137720")
+            .setMachineType("machineType-218117087")
             .setInstallGpuDriver(true)
-            .setCustomGpuDriverPath("custom_gpu_driver_path1863223803")
+            .setCustomGpuDriverPath("customGpuDriverPath509224520")
             .setBootDiskSizeGb(1398920548)
             .setDataDiskSizeGb(-1668379732)
             .setNoRemoveDataDisk(true)
-            .setKmsKey("kms_key-591635343")
+            .setKmsKey("kmsKey-1127483058")
             .setNoPublicIp(true)
             .setNoProxyAccess(true)
             .setNetwork("network1843485230")
@@ -1044,7 +1044,7 @@ public class NotebookServiceClientTest {
     UpgradeInstanceInternalRequest request =
         UpgradeInstanceInternalRequest.newBuilder()
             .setName("name3373707")
-            .setVmId("vm_id112317347")
+            .setVmId("vmId3622450")
             .build();
 
     Instance actualResponse = client.upgradeInstanceInternalAsync(request).get();
@@ -1072,7 +1072,7 @@ public class NotebookServiceClientTest {
       UpgradeInstanceInternalRequest request =
           UpgradeInstanceInternalRequest.newBuilder()
               .setName("name3373707")
-              .setVmId("vm_id112317347")
+              .setVmId("vmId3622450")
               .build();
       client.upgradeInstanceInternalAsync(request).get();
       Assert.fail("No exception raised");
@@ -1097,7 +1097,7 @@ public class NotebookServiceClientTest {
         ListEnvironmentsRequest.newBuilder()
             .setParent("parent-995424086")
             .setPageSize(883849137)
-            .setPageToken("page_token1630607433")
+            .setPageToken("pageToken873572522")
             .build();
 
     ListEnvironmentsPagedResponse pagedListResponse = client.listEnvironments(request);
@@ -1130,7 +1130,7 @@ public class NotebookServiceClientTest {
           ListEnvironmentsRequest.newBuilder()
               .setParent("parent-995424086")
               .setPageSize(883849137)
-              .setPageToken("page_token1630607433")
+              .setPageToken("pageToken873572522")
               .build();
       client.listEnvironments(request);
       Assert.fail("No exception raised");
@@ -1144,9 +1144,9 @@ public class NotebookServiceClientTest {
     Environment expectedResponse =
         Environment.newBuilder()
             .setName("name3373707")
-            .setDisplayName("display_name1615086568")
+            .setDisplayName("displayName1714148973")
             .setDescription("description-1724546052")
-            .setPostStartupScript("post_startup_script355382860")
+            .setPostStartupScript("postStartupScript870779112")
             .setCreateTime(Timestamp.newBuilder().build())
             .build();
     mockNotebookService.addResponse(expectedResponse);
@@ -1188,9 +1188,9 @@ public class NotebookServiceClientTest {
     Environment expectedResponse =
         Environment.newBuilder()
             .setName("name3373707")
-            .setDisplayName("display_name1615086568")
+            .setDisplayName("displayName1714148973")
             .setDescription("description-1724546052")
-            .setPostStartupScript("post_startup_script355382860")
+            .setPostStartupScript("postStartupScript870779112")
             .setCreateTime(Timestamp.newBuilder().build())
             .build();
     Operation resultOperation =
@@ -1204,7 +1204,7 @@ public class NotebookServiceClientTest {
     CreateEnvironmentRequest request =
         CreateEnvironmentRequest.newBuilder()
             .setParent("parent-995424086")
-            .setEnvironmentId("environment_id608412359")
+            .setEnvironmentId("environmentId-950205810")
             .setEnvironment(Environment.newBuilder().build())
             .build();
 
@@ -1233,7 +1233,7 @@ public class NotebookServiceClientTest {
       CreateEnvironmentRequest request =
           CreateEnvironmentRequest.newBuilder()
               .setParent("parent-995424086")
-              .setEnvironmentId("environment_id608412359")
+              .setEnvironmentId("environmentId-950205810")
               .setEnvironment(Environment.newBuilder().build())
               .build();
       client.createEnvironmentAsync(request).get();
