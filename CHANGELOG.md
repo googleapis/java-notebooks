@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.3.0](https://www.github.com/googleapis/java-notebooks/compare/v0.2.6...v0.3.0) (2021-03-15)
+
+
+### Features
+
+* **generator:** update protoc to v3.15.3 ([#141](https://www.github.com/googleapis/java-notebooks/issues/141)) ([538b004](https://www.github.com/googleapis/java-notebooks/commit/538b004d7081e063204a97ed8a23651c13ffda77))
+
+
+### Dependencies
+
+* update dependency com.google.cloud:google-cloud-shared-dependencies to v0.20.1 ([#147](https://www.github.com/googleapis/java-notebooks/issues/147)) ([2019dba](https://www.github.com/googleapis/java-notebooks/commit/2019dba8875d50d462f996ed0060ea132fd74d23))
+
 ### [0.2.6](https://www.github.com/googleapis/java-notebooks/compare/v0.2.5...v0.2.6) (2021-02-25)
 
 
