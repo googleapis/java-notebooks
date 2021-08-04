@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://www.github.com/googleapis/java-notebooks/compare/v0.3.0...v0.4.0) (2021-08-04)
+
+
+### Features
+
+* configure initial sp version ([#221](https://www.github.com/googleapis/java-notebooks/issues/221)) ([f79204b](https://www.github.com/googleapis/java-notebooks/commit/f79204b32fa5482a6bf51a195e0b3db5eb0bb6a8))
+
 ## [0.3.0](https://www.github.com/googleapis/java-notebooks/compare/v0.2.6...v0.3.0) (2021-06-17)
 
 
