@@ -74,8 +74,7 @@ public final class InstanceProto {
     java.lang.String[] descriptorData = {
       "\n"
           + "(google/cloud/notebooks/v1/instance.pro"
-          + "to\022\031google.cloud.notebooks.v1\032\037google/ap"
-          + "i/field_behavior.proto\032\031google/api/resource.proto\032+google/cloud/notebooks/v1/environment.proto\032\037google/protobuf/timestamp.proto\"\371\001\n"
+          + "to\022\031google.cloud.notebooks.v1\032\037google/api/field_behavior.proto\032\031google/api/resource.proto\032+google/cloud/notebooks/v1/environment.proto\032\037google/protobuf/timestamp.proto\"\371\001\n"
           + "\023ReservationAffinity\022Z\n"
           + "\030consume_reservation_type\030\001"
           + " \001(\01623.google.cloud.notebooks.v1.ReservationAffinity.TypeB\003\340A\001\022\020\n"
