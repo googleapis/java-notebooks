@@ -105,8 +105,7 @@ public final class RuntimeProto {
   static {
     java.lang.String[] descriptorData = {
       "\n"
-          + "\'google/cloud/notebooks/v1/runtime.prot"
-          + "o\022\031google.cloud.notebooks.v1\032\037google/api/field_behavior.proto\032\031google/api/resource.proto\032+google/cloud/notebooks/v1/environment.proto\032\037google/protobuf/timestamp.proto\"\375\006\n"
+          + "\'google/cloud/notebooks/v1/runtime.proto\022\031google.cloud.notebooks.v1\032\037google/api/field_behavior.proto\032\031google/api/resource.proto\032+google/cloud/notebooks/v1/environment.proto\032\037google/protobuf/timestamp.proto\"\375\006\n"
           + "\007Runtime\022\021\n"
           + "\004name\030\001 \001(\tB\003\340A\003\022D\n"
           + "\017virtual_machine\030\002"
