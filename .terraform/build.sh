@@ -1,15 +1,14 @@
 set -e
 
 # Perform gcloud auth login if no current credentials are available.
-if gcloud auth print-access-token &> /dev/null
-then true;
+if gcloud auth print-access-token &>/dev/null; then
+  true
 else
   gcloud auth login
 fi
 
 # Ensure GOOGLE_CLOUD_PROJECT environment variable is set.
-if [ -z "${GOOGLE_CLOUD_PROJECT+x}" ];
-then
+if [ -z "${GOOGLE_CLOUD_PROJECT+x}" ]; then
   echo -n "The Google Cloud Project to deploy resources to:"
   read -r project_id
   export GOOGLE_CLOUD_PROJECT="${project_id}"

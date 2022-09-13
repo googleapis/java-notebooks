@@ -81,3 +81,13 @@ resource "null_resource" "clirr" {
     google_project_service.notebooks_api
   ]
 }
+
+resource "null_resource" "samples" {
+  provisioner "local-exec" {
+    command     = "./.test/samples.sh"
+    working_dir = "../"
+  }
+  depends_on = [
+    google_project_service.notebooks_api
+  ]
+}
