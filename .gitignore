@@ -10,6 +10,15 @@ target/
 *.iml
 .idea/
 
+# Terraform
+.terraform/.terraform/
+.terraform/plugins/
+.terraform/providers/
+.terraform/plugin_path
+*.lock.hcl
+*.tfstate
+*.tfstate.backup
+
 # python utilities
 *.pyc
 __pycache__

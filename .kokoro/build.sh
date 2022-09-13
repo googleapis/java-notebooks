@@ -47,36 +47,29 @@ set +e
 
 case ${JOB_TYPE} in
 test)
-    mvn test -B -ntp -Dclirr.skip=true -Denforcer.skip=true
+    source ./.test/unit-test.sh
     RETURN_CODE=$?
     ;;
 lint)
-    mvn com.coveo:fmt-maven-plugin:check -B -ntp
+    source ./.test/lint.sh
     RETURN_CODE=$?
     ;;
 javadoc)
-    mvn javadoc:javadoc javadoc:test-javadoc -B -ntp
+    source ./.test/javadoc.sh
     RETURN_CODE=$?
     ;;
 integration)
-    mvn -B ${INTEGRATION_TEST_ARGS} \
-      -ntp \
-      -Penable-integration-tests \
-      -DtrimStackTrace=false \
-      -Dclirr.skip=true \
-      -Denforcer.skip=true \
-      -fae \
-      verify
+    source ./.test/integration-test.sh
     RETURN_CODE=$?
     ;;
 graalvm)
     # Run Unit and Integration Tests with Native Image
-    mvn -B ${INTEGRATION_TEST_ARGS} -ntp -Pnative -Penable-integration-tests test
+    source ./.test/graalvm.sh
     RETURN_CODE=$?
     ;;
 graalvm17)
     # Run Unit and Integration Tests with Native Image
-    mvn -B ${INTEGRATION_TEST_ARGS} -ntp -Pnative -Penable-integration-tests test
+    source ./.test/graalvm.sh
     RETURN_CODE=$?
     ;;
 samples)
@@ -94,22 +87,13 @@ samples)
           source "$FILE"
         done
 
-        pushd ${SAMPLES_DIR}
-        mvn -B \
-          -ntp \
-          -DtrimStackTrace=false \
-          -Dclirr.skip=true \
-          -Denforcer.skip=true \
-          -fae \
-          verify
-        RETURN_CODE=$?
-        popd
+        source ./.test/samples.sh
     else
         echo "no sample pom.xml found - skipping sample tests"
     fi
     ;;
 clirr)
-    mvn -B -ntp -Denforcer.skip=true clirr:check
+    source ./.test/clirr.sh
     RETURN_CODE=$?
     ;;
 *)
